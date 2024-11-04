@@ -5,7 +5,7 @@ public class Stack {
     private char[] elements;
     private int size;
 
-    public Stack(int capacity) {
+    public Stack(int size) {
         this.size = size;
         elements = new char[size];
         top = -1;
@@ -19,12 +19,12 @@ public class Stack {
         return top == size - 1;
     }
 
-    public void push(char item) {
+    public void push(char element) {
         if (isFull()) {
             System.out.println("Стек переполнен!");
             return;
         }
-        elements[++top] = elements;
+        elements[++top] = element;
     }
 
     public char pop() {
