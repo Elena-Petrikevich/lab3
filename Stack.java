@@ -6,8 +6,8 @@ public class Stack {
     private int size;
 
     public Stack(int capacity) {
-        this.size = capacity;
-        elements = new char[capacity];
+        this.size = size;
+        elements = new char[size];
         top = -1;
     }
 
@@ -24,7 +24,7 @@ public class Stack {
             System.out.println("Стек переполнен!");
             return;
         }
-        elements[++top] = item;
+        elements[++top] = elements;
     }
 
     public char pop() {
@@ -39,8 +39,8 @@ public class Stack {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите последовательность символов: ");
         String inputString = scanner.nextLine();
-        int capacity = inputString.length();
-        Stack stack = new Stack(capacity);
+        int size = inputString.length();
+        Stack stack = new Stack(size);
 
         for (int i = 0; i < inputString.length(); i++) {
             stack.push(inputString.charAt(i));
