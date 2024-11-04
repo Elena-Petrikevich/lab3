@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Stack {
-    private int top;
-    private char[] elements;
-    private int size;
+     int top;
+     char[] elements;
+     int size;
 
     public Stack(int size) {
         this.size = size;
