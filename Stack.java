@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Stack {
-     int top;
-     char[] elements;
-     int size;
+    int top;
+    char[] elements;
+    int size;
 
     public Stack(int size) {
         this.size = size;
@@ -36,14 +36,14 @@ public class Stack {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner c = new Scanner(System.in);
         System.out.print("Введите последовательность символов: ");
-        String inputString = scanner.nextLine();
-        int size = inputString.length();
+        String s = c.nextLine();
+        int size = s.length();
         Stack stack = new Stack(size);
 
-        for (int i = 0; i < inputString.length(); i++) {
-            stack.push(inputString.charAt(i));
+        for (int i = 0; i < s.length(); i++) {
+            stack.push(s.charAt(i));
         }
 
         System.out.print("Выведенная последовательность в обратном порядке: ");
